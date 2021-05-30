@@ -93,13 +93,30 @@ import Foundation
 
 // ----------------------------------Heap----------------------------//
 
-var nums = [3 , 9 , 2, 1 ,4 , 5]
-var heap = Heap(vals: nums)
+//var nums = [3 , 9 , 2, 1 ,4 , 5]
+//var heap = Heap(vals: nums)
+//
+//
+//
+//while heap.isEmpty() != true {
+//    print(heap.pop())
+//}
+//
+//
 
 
+// ----------------------------------Hash-Table----------------------------//
 
-while heap.isEmpty() != true {
-    print(heap.pop())
-}
-   
+var hashtable = HashTable(size: 10);
 
+
+hashtable.add(key: 123, val: "apple")
+hashtable.add(key: 432, val: "mango")
+hashtable.add(key: 213, val: "banana")
+hashtable.add(key: 654, val: "guava")
+
+hashtable.printt()
+
+hashtable.delete(key: 123)
+
+hashtable.printt()
