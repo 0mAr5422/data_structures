@@ -8,7 +8,7 @@ class Node  :
     
 class AVL:
     def __init__(self , root ) :
-        self.root = root;
+        self.root = root; 
     
     def getHeight(self, root) :
         if not root :
@@ -19,6 +19,7 @@ class AVL:
         y = root.left;
         t = y.right;
         y.right = root;
+
         root.left = t;
         root.bf = self.getHeight(root.left) - self.getHeight(root.right);
         y.bf = self.getHeight(y.left) - self.getHeight(y.right);
